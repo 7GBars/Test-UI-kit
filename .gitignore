@@ -3,3 +3,5 @@ node_modules/
 
 # Игнорировать node_modules
 .idea/
+
+dist/

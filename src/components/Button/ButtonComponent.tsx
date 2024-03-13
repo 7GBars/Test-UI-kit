@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 
 type TButtonProps = {
+  children: React.ReactNode;
   color: string;
   size?: 's' | 'm' | 'l';
 }

@@ -1,6 +1,9 @@
 import React, {FC} from 'react';
 
-export const InputComponent: FC<{}> = ({children, ...rest}) => {
+type TInputComponentProps = {
+  children: React.ReactNode;
+}
+export const InputComponent: FC<TInputComponentProps> = ({children, ...rest}) => {
   return (
     <input {...rest} />
   );
