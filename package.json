@@ -1,6 +1,7 @@
 {
   "name": "UI_Kit",
-  "version": "1.0.1",
+
+  "version": "1.0.3",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
