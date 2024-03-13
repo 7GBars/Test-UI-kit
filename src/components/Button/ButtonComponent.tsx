@@ -2,13 +2,13 @@ import React, {FC} from 'react';
 
 type TButtonProps = {
   children: React.ReactNode;
-  color: string;
+  color?: string;
   size?: 's' | 'm' | 'l';
 }
 
 export const ButtonComponent: FC<TButtonProps> = ({
                                    children,
-                                   color,
+                                   color = 'red',
                                    size,
                                    ...rest
                                  }) => {
