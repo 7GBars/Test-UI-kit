@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
+    "module": "esnext", // Изменение module на поддерживаемую опцию
     "jsx": "react",
     "strict": true,
     "esModuleInterop": true,

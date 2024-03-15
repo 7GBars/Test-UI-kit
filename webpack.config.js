@@ -8,6 +8,7 @@ module.exports = {
         filename: "index.js",
         libraryTarget: "umd",
         path: path.resolve(__dirname, 'dist'),
+        publicPath: 'auto',
         clean: true
     },
 
@@ -16,7 +17,9 @@ module.exports = {
             {
                 test: /\.(png|jp(e*)g|svg|gif)$/,
                 type: "asset/resource",
-                exclude: /node_modules/
+                generator: {
+                    filename: 'assets/images/[name].[ext]',
+                },
             },
             {
                 test: /\.(ts|tsx)?$/,
