@@ -1,13 +1,12 @@
 {
   "name": "UI_Kit",
-
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lib-prod": "webpack --mode production",
-    "lib-dev": "webpack --mode development"
+    "lib-prod": "webpack --config webpackTest.config.js --mode production",
+    "lib-dev": "webpack --config webpackTest.config.js --mode development"
   },
   "keywords": [],
   "author": "",
@@ -15,9 +14,11 @@
   "devDependencies": {
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.22",
+    "css-loader": "^6.10.0",
     "file-loader": "^6.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "style-loader": "^3.3.4",
     "ts-loader": "^9.5.1",
     "typescript": "^5.4.2",
     "webpack": "^5.90.3",
@@ -27,5 +28,7 @@
     "react": "*",
     "react-dom": "*"
   },
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ]
 }
