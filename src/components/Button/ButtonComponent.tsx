@@ -1,4 +1,5 @@
 import React, {FC} from 'react';
+import './buttonComponent.css';
 
 type TButtonProps = {
   children: React.ReactNode;
@@ -12,8 +13,11 @@ export const ButtonComponent: FC<TButtonProps> = ({
                                    size,
                                    ...rest
                                  }) => {
+
+  const sizeClass = `$size__${size ?? 'm'}`;
+
   return (
-    <button {...rest} style={{color}}>
+    <button {...rest} style={{color}} className={sizeClass}>
       {children}
     </button>
   );
