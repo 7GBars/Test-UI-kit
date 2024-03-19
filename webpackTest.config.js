@@ -1,4 +1,5 @@
 const path = require('path')
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -10,6 +11,13 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         publicPath: 'auto',
         clean: true
+    },
+
+    optimization: {
+        // eslint-disable-next-line spellcheck/spell-checker
+        minimizer: [new TerserPlugin({
+            extractComments: false,
+        })],
     },
 
     module: {
