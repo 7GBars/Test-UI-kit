@@ -14,7 +14,7 @@ export const ButtonComponent: FC<TButtonProps> = ({
                                    ...rest
                                  }) => {
 
-  const sizeClass = `$size__${size ?? 'm'}`;
+  const sizeClass = `size__${size ?? 'm'}`;
 
   return (
     <button {...rest} style={{color}} className={sizeClass}>
