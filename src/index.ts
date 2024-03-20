@@ -1,7 +1,7 @@
-import { ButtonComponent, InputComponent, Logo } from './components/index'
+import { Button, InputComponent, Logo } from './components/index'
 
 export {
   InputComponent,
-  ButtonComponent,
+  Button,
   Logo
 }

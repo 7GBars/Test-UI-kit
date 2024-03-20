@@ -7,7 +7,7 @@ type TButtonProps = {
   size?: 's' | 'm' | 'l';
 }
 
-export const ButtonComponent: FC<TButtonProps> = ({
+export const Button: FC<TButtonProps> = ({
                                    children,
                                    color = 'red',
                                    size,

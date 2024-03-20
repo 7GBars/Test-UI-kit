@@ -6,16 +6,16 @@ module.exports = {
 
 
     entry: {
-        ButtonComponent: './src/components/ButtonComponent.ts',
-        InputComponent: './src/components/InputComponent.ts',
-        Logo: './src/components/Logo.ts',
-        index: './src/index.ts',
+        main: './src/index.ts',
+        input: './src/components/Input',
+        button: './src/components/Button',
+        logo: './src/components/Logo'
     },
     output: {
         filename: '[name].js',
         libraryTarget: "umd",
         path: path.resolve(__dirname, 'dist'),
-        publicPath: 'auto',
+        library: 'my-library-name',
         clean: true
     },
 
