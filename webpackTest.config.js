@@ -12,7 +12,9 @@ module.exports = {
         logo: './src/components/Logo'
     },
     output: {
-        filename: '[name].js',
+        filename: (pathData) => {
+            return pathData.chunk.name === 'main' ? 'index.js' : `components/${pathData.chunk.name}/[name].js`;
+        },
         libraryTarget: "umd",
         path: path.resolve(__dirname, 'dist'),
         library: 'my-library-name',
