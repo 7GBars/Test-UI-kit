@@ -4,9 +4,15 @@ const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
     mode: 'production',
 
-    entry: './src/index.ts',
+
+    entry: {
+        ButtonComponent: './src/components/ButtonComponent.ts',
+        InputComponent: './src/components/InputComponent.ts',
+        Logo: './src/components/Logo.ts',
+        index: './src/index.ts',
+    },
     output: {
-        filename: "index.js",
+        filename: '[name].js',
         libraryTarget: "umd",
         path: path.resolve(__dirname, 'dist'),
         publicPath: 'auto',
