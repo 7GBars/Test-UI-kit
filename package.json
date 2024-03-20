@@ -1,5 +1,5 @@
 {
-  "name": "UI_Kit_geo_test",
+  "name": "geo_bars_ui_kit_lib",
   "version": "1.0.13",
   "description": "",
   "main": "./dist/index.js",
