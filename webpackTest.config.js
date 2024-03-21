@@ -1,16 +1,27 @@
 const path = require('path')
+
 const TerserPlugin = require('terser-webpack-plugin');
+
+
+const fs = require('fs');
+const componentsDir = path.resolve(__dirname, 'src/components/');
+function getComponentFiles() {
+    return fs.readdirSync(componentsDir);
+}
+
+
+const entry = getComponentFiles()
+    .filter(file => fs.statSync(path.join(componentsDir, file)).isDirectory())
+    .reduce((acc, component) => {
+        acc[component] = path.join(componentsDir, component, `${component}.tsx`);
+        return acc;
+    }, {});
+
 
 module.exports = {
     mode: 'production',
 
-
-    entry: {
-        main: './src/index.ts',
-        input: './src/components/Input',
-        button: './src/components/Button',
-        logo: './src/components/Logo'
-    },
+    entry: entry,
     output: {
         filename: (pathData) => {
             return pathData.chunk.name === 'main' ? 'index.js' : `components/${pathData.chunk.name}/[name].js`;
