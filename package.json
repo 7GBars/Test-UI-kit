@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lib-prod": "webpack --config webpackTest.config.js --mode production",
     "lib-dev": "webpack --config webpackTest.config.js --mode development",
-    "npm-pub": "webpack && npm version patch &&  npm publish"
+    "npm-pub": "webpack --config webpackTest.config.js && npm version patch &&  npm publish"
   },
   "keywords": [],
   "author": "",
