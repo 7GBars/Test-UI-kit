@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "esnext",
+    "module": "esnext", // Изменение module на поддерживаемую опцию
     "jsx": "react",
     "strict": true,
     "esModuleInterop": true,
     "lib": ["es2015", "dom"],
-    "outDir": "./components",
+
+    "outDir": "./dist/",
     "sourceMap": true,
     "declaration": true
   },
-  "moduleResolution": "node",
-  "baseUrl": ".",
+
   "include": ["src", "custom.d.ts"],
   "exclude": ["node_modules", "dist"]
 }
