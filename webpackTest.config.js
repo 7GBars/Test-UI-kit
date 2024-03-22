@@ -61,10 +61,6 @@ module.exports = {
     },
 
     resolve: {
-        alias: {
-            "geo_bars_ui_kit_lib": path.resolve(__dirname, 'dist'), // Алиас для вашей библиотеки
-            "@geo_components": path.resolve('src/components') // Алиас для ссылки на ваши компоненты
-        },
         extensions: ['.ts', '.tsx', '.js'], // Добавьте расширения файлов, если нужно
     },
 

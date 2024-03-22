@@ -11,10 +11,7 @@
     "declaration": true
   },
   "moduleResolution": "node",
-  "baseUrl": "./",
-  "paths": {
-    "@geo_components/*": ["./src/components/*"]
-  },
+  "baseUrl": ".",
   "include": ["src", "custom.d.ts"],
   "exclude": ["node_modules", "dist"]
 }
