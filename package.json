@@ -1,6 +1,6 @@
 {
   "name": "geo_bars_ui_kit_lib",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
