@@ -6,13 +6,14 @@
     "strict": true,
     "esModuleInterop": true,
     "lib": ["es2015", "dom"],
-    "outDir": "./dist/",
+    "outDir": "./components",
     "sourceMap": true,
     "declaration": true
   },
-  "baseUrl": ".",
+  "moduleResolution": "node",
+  "baseUrl": "./",
   "paths": {
-    "@components/*": ["src/components/*"]
+    "@geo_components/*": ["./src/components/*"]
   },
   "include": ["src", "custom.d.ts"],
   "exclude": ["node_modules", "dist"]
